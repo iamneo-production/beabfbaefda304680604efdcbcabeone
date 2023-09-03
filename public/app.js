@@ -1,5 +1,3 @@
-// JavaScript code for Tic Tac Toe game
-
 const buttons = document.querySelectorAll('.btn');
 const resultText = document.querySelector('.result');
 const resetButton = document.getElementById('reset');
@@ -29,7 +27,7 @@ function handleMove(index) {
                 gameActive = false;
                 resultText.textContent = `Player ${currentPlayer} wins!`;
                 resetButton.disabled = false;
-                break;
+                return; // Exit the function early when a win is detected
             }
         }
 
@@ -37,11 +35,12 @@ function handleMove(index) {
         if (!gameBoard.includes('') && gameActive) {
             resultText.textContent = "It's a draw!";
             resetButton.disabled = false;
+            return; // Exit the function early when it's a draw
         }
 
         // Switch players
         currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
-        resultText.textContent = `Player ${currentPlayer}'s Turn`;
+        resultText.textContent = `Player ${currentPlayer} Turn`;
     }
 }
 
@@ -53,7 +52,7 @@ function resetGame() {
         button.classList.remove('X', 'O');
         button.removeAttribute('disabled');
     });
-    resultText.textContent = `Player X's Turn`;
+    resultText.textContent = `Player X Turn`;
     currentPlayer = 'X';
     gameActive = true;
     resetButton.disabled = true;

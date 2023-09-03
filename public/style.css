@@ -98,6 +98,6 @@ header {
     color: #fff;
 }
 
-.reset-btn:disabled {
+.reset:disabled {
     cursor: no-drop;
 }

@@ -36,6 +36,7 @@ const ticTacToe = (element, index) => {
     // ...
 };
 
+
     /*
     **Part 2: Reset Function (Add your code here)**
 

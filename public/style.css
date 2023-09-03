@@ -10,3 +10,25 @@ body {
   }
   
 /* Enter your styling here */
+
+/* styles.css */
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 10px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 20px;
+}

@@ -51,6 +51,7 @@ function resetGame() {
     buttons.forEach((button) => {
         button.value = '';
         button.classList.remove('X', 'O');
+        button.removeAttribute('disabled');
     });
     resultText.textContent = `Player X's Turn`;
     currentPlayer = 'X';
@@ -62,6 +63,7 @@ function resetGame() {
 buttons.forEach((button, index) => {
     button.addEventListener('click', () => {
         handleMove(index);
+        button.setAttribute('disabled', 'true');
     });
 });
 

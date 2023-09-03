@@ -2,7 +2,7 @@
 
 const buttons = document.querySelectorAll('.btn');
 const resultText = document.querySelector('.result');
-const resetButton = document.getElementById('reset-button');
+const resetButton = document.getElementById('reset');
 
 let currentPlayer = 'X';
 let gameBoard = ['', '', '', '', '', '', '', '', ''];

@@ -80,7 +80,7 @@ header {
     margin-top: 20px;
 }
 
-.reset-btn {
+.reset {
     border: 2px solid #000;
     border-radius: 5px;
     width: 100px;
@@ -93,7 +93,7 @@ header {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.reset-btn:hover {
+.reset:hover {
     background-color: #000;
     color: #fff;
 }
